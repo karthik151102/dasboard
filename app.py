@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # MongoDB connection
-MONGO_URI = os.getenv("MONGO_URI")
+MONGO_URI = os.getenv("mongodb://localhost:27017/")
 client = MongoClient(MONGO_URI)
 db = client["karthik"]
 collection = db["collection"]
